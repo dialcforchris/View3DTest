@@ -9,7 +9,10 @@ const view3D = new View3D("#view3d", {
 
 function Start() 
 {
+    view3D.setCamera(0, 0, 0, 0, 0, 0);
+    view3D.Audio = true;
+    
     view3D.play();
-    Audio = new Audio("@Audio/3D.mp3");
-    Audio.play();
+    let audio = new Audio("@Audio/3D.mp3");
+    audio.play();
 }
