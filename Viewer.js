@@ -14,7 +14,7 @@ function pauseAudio() {
 }
 
 
-function Start() 
+function start() 
 {
     var button = document.getElementById("button");
     button.textContent = "Stop";
