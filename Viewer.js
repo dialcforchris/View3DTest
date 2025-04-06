@@ -3,13 +3,15 @@
 //import View3D from "@egjs/view3d";
 //import "@egjs/view3d/css/view3d-bundle.min.css";
 
-var x = document.getElementById("audio");//createElement("AUDIO");
+
 function playAudio() {
+    var x = document.getElementById("audio");//createElement("AUDIO");
      x.play();
 
 }
 
 function pauseAudio() {
+    var x = document.getElementById("audio");//createElement("AUDIO");
   x.pause();
 }
 
