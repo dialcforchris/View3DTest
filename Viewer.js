@@ -1,7 +1,7 @@
 
 
-//import View3D from "@egjs/view3d";
-//import "@egjs/view3d/css/view3d-bundle.min.css";
+import View3D from "@egjs/view3d";
+import "@egjs/view3d/css/view3d-bundle.min.css";
 
 
 function playAudio() {
