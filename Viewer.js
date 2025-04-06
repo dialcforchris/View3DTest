@@ -15,7 +15,7 @@ function pauseAudio() {
 
 function Start() 
 {
-    var button = document.getElementById("startButton");
+    var button = document.getElementsByClassName("button");
     button.textContent = "Stop";
     playAudio();
     const view3D = new View3D("#view3d", {
