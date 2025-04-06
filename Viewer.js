@@ -13,6 +13,6 @@ function Start()
     view3D.Audio = true;
     
     view3D.play();
-    let audio = new Audio("@Audio/3D.mp3");
+    let audio = new Audio("../Audio/3D.mp3");
     audio.play();
 }
