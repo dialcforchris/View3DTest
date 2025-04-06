@@ -4,7 +4,7 @@ import "@egjs/view3d/css/view3d-bundle.min.css";
 
 var x = document.createElement("AUDIO");
 function playAudio() {
-  x.src = "../Audio/3D.mp3";
+  x.src = "/Audio/3D.mp3";
     x.play();
 
 }
