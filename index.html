@@ -8,13 +8,15 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Hello WebXR!</title>
 
-    <button onclick="Start()">Start Hello WebXR</button>
+    <button id="button" onclick="Start()">Start Hello WebXR</button>
 
     <script src="Viewer.js"></script>
 <audio id="audio" src=>"3D.mp3"</audio>
 
   </head>
 <body>
+
+
     <div id="view3d" class="view3d-wrapper view3d-square">
         <canvas class="view3d-canvas"></canvas>
       </div>

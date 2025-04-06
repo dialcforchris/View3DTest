@@ -1,6 +1,7 @@
-import View3D from "@egjs/view3d";
-import "@egjs/view3d/css/view3d-bundle.min.css";
 
+
+import View3D from "@egjs/view3d";
+    import "@egjs/view3d/css/view3d-bundle.min.css";
 
 var x = document.getElementById("audio");//createElement("AUDIO");
 function playAudio() {
@@ -15,7 +16,7 @@ function pauseAudio() {
 
 function Start() 
 {
-    var button = document.getElementsByClassName("button");
+    var button = document.getElementById("button");
     button.textContent = "Stop";
     playAudio();
     const view3D = new View3D("#view3d", {
