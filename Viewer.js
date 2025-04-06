@@ -2,10 +2,9 @@ import View3D from "@egjs/view3d";
 import "@egjs/view3d/css/view3d-bundle.min.css";
 
 
-var x = document.createElement("AUDIO");
+var x = document.getElementById("audio");//createElement("AUDIO");
 function playAudio() {
-  x.src = "3D.mp3";
-    x.play();
+     x.play();
 
 }
 
