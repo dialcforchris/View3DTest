@@ -1,8 +1,3 @@
-
-
-
-
-
 function playAudio() {
     var x = document.getElementById("audio");//createElement("AUDIO");
      x.play();
