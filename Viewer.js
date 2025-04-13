@@ -1,4 +1,4 @@
-import View3D, { AROverlay } from "@egjs/view3d";
+//import View3D, { AROverlay } from "@egjs/view3d";
 
 function playAudio() {
     var x = document.getElementById("audio");//createElement("AUDIO");
