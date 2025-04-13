@@ -18,7 +18,7 @@ function start()
     button.textContent = "Stop";
     playAudio();
      const view3D = new View3D("#wrapper-el", {
-     src: "../TestModel.gltf"});
+     src: "../TestModel.gltf",});
     
     //view3D.Audio.src = "../3D.mp3";
     // = true;
