@@ -27,13 +27,13 @@ function start()
      button.textContent = "Stop";
     }
     if(!createdScene)
-    {const view3D = new View3D("#wrapper-el", {
+    {
+      const view3D = new View3D("#wrapper-el", {
      src: "../View3DTest/TestModel.gltf",
     envmap: "",});
     
     //view3D.Audio.src = "../3D.mp3";
-    view3D.Audio = true;
-    
+    //view3D.Audio = true;
     //view3D.play();
     let audio = new Audio("../Audio/3D.mp3");
     audio.play();
