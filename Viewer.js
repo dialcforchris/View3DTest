@@ -11,21 +11,21 @@ function pauseAudio() {
   x.pause();
 }
 
-let createdScene = false;
+const createdScene = false;
 
 function start() 
 {
   
     var button = document.getElementById("button");
-    if(    button.textContent == "Stop")
+    if(button.textContent == "Stop")
     {
         button.textContent = "Start XR";
         pauseAudio();
     }
     else
     {
-    playAudio();
-     button.textContent = "Stop";
+        playAudio();
+        button.textContent = "Stop";
     }
     if(!createdScene)
     {
