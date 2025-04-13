@@ -1,4 +1,5 @@
 //import View3D, { AROverlay } from "@egjs/view3d";
+const createdScene = false;
 
 function playAudio() {
     var x = document.getElementById("audio");//createElement("AUDIO");
@@ -11,7 +12,7 @@ function pauseAudio() {
   x.pause();
 }
 
-const createdScene = false;
+
 
 function start() 
 {
@@ -27,7 +28,7 @@ function start()
         playAudio();
         button.textContent = "Stop";
     }
-    
+
     if(!createdScene)
     {
       const view3D = new View3D("#wrapper-el", {
