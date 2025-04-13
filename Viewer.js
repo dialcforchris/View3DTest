@@ -18,11 +18,12 @@ function start()
     if(    button.textContent == "Stop")
     {
         button.textContent = "Start XR";
+        pauseAudio();
     }
     else
     {
     playAudio();
-     button.textContent == "Stop";
+     button.textContent = "Stop";
     }
     const view3D = new View3D("#wrapper-el", {
      src: "../View3DTest/TestModel.gltf",
