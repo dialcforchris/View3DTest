@@ -27,6 +27,7 @@ function start()
         playAudio();
         button.textContent = "Stop";
     }
+    
     if(!createdScene)
     {
       const view3D = new View3D("#wrapper-el", {
