@@ -1,4 +1,3 @@
-
 import View3D, { AROverlay } from "@egjs/view3d";
 
 function playAudio() {
@@ -33,6 +32,7 @@ function start()
       const view3D = new View3D("#wrapper-el", {
      src: "../View3DTest/TestModel.gltf",
     envmap: "",});
+   
     view3D.loadPlugins(new AROverlay());
     
     //view3D.Audio.src = "../3D.mp3";
