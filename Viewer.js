@@ -10,6 +10,7 @@ function pauseAudio() {
   x.pause();
 }
 
+let createdScene = false;
 
 function start() 
 {
@@ -25,7 +26,8 @@ function start()
     playAudio();
      button.textContent = "Stop";
     }
-    const view3D = new View3D("#wrapper-el", {
+    if(!createdScene)
+    {const view3D = new View3D("#wrapper-el", {
      src: "../View3DTest/TestModel.gltf",
     envmap: "",});
     
@@ -35,4 +37,6 @@ function start()
     //view3D.play();
     let audio = new Audio("../Audio/3D.mp3");
     audio.play();
+    createdScene = true;
+  }
 }
