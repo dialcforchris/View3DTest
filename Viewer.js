@@ -14,7 +14,19 @@ let createdScene = false;
 
 function start() 
 {
-  
+  if(!createdScene)
+    {
+      const view3D = new View3D("#wrapper-el", {
+     src: "../View3DTest/TestModel.gltf",
+    envmap: "",});
+    
+    //view3D.Audio.src = "../3D.mp3";
+    //view3D.Audio = true;
+    //view3D.play();
+    // let audio = new Audio("..3D.mp3");
+    // audio.play();
+    createdScene = true;
+  }
     var button = document.getElementById("button");
     if(    button.textContent == "Stop")
     {
@@ -26,17 +38,5 @@ function start()
     playAudio();
      button.textContent = "Stop";
     }
-    if(!createdScene)
-    {
-      const view3D = new View3D("#wrapper-el", {
-     src: "../View3DTest/TestModel.gltf",
-    envmap: "",});
-    
-    //view3D.Audio.src = "../3D.mp3";
-    //view3D.Audio = true;
-    //view3D.play();
-    let audio = new Audio("../Audio/3D.mp3");
-    audio.play();
-    createdScene = true;
-  }
+   
 }
