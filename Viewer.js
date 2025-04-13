@@ -33,7 +33,7 @@ function start()
      src: "../View3DTest/TestModel.gltf",
     envmap: "",});
    
-    view3D.loadPlugins(new AROverlay());
+    //view3D.loadPlugins(new AROverlay());
     
     //view3D.Audio.src = "../3D.mp3";
     //view3D.Audio = true;
